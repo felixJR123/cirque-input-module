@@ -3,7 +3,7 @@ description: |
 
 compatible: "cirque,pinnacle-custom"
 
-include: ["i2c-device.yaml"]
+include: ["i2c-device.yaml", "sensor-device.yaml"]
 
 properties:
   dr-gpios:
