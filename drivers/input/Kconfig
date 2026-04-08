@@ -1,7 +1,7 @@
 # Copyright (c) 2022 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-menuconfig INPUT_PINNACLE
+menuconfig INPUT_PINNACLE_LEGACY
     bool "Cirque Pinnacle trackpads"
     default y
     depends on GPIO

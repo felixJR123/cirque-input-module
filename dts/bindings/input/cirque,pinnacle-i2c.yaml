@@ -1,37 +1,6 @@
 description: |
   Sensor driver for the Cirque Pinnacle trackpad ASICs, using the I2C interface
 
-compatible: "cirque,pinnacle-custom"
+compatible: "cirque,pinnacle"
 
-include: ["i2c-device.yaml", "sensor-device.yaml"]
-
-properties:
-  dr-gpios:
-    type: phandle-array
-    description: Data ready pin for the trackpad
-  rotate-90:
-    type: boolean
-  x-invert:
-    type: boolean
-  y-invert:
-    type: boolean
-  sleep:
-    type: boolean
-  no-secondary-tap:
-    type: boolean
-  no-taps:
-    type: boolean
-  sensitivity:
-    type: string
-    enum:
-      - 1x
-      - 2x
-      - 3x
-      - 4x
-    description: ADC attenuation (sensitivity) setting.
-  x-axis-z-min:
-    type: int
-    default: 5
-  y-axis-z-min:
-    type: int
-    default: 4
+include: ["i2c-device.yaml", "cirque,pinnacle-common.yaml"]
