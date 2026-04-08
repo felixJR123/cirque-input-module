@@ -7,7 +7,7 @@ menuconfig INPUT_PINNACLE_LEGACY
     depends on GPIO
     depends on SPI || I2C
     depends on INPUT
-    depends on DT_HAS_CIRQUE_PINNACLE_ENABLED
+    depends on DT_HAS_CIRQUE_PINNACLE_LEGACY_ENABLED
     help
       Enable driver for Cirque Pinnacle trackpads
 
