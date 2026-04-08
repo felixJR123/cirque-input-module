@@ -11,7 +11,7 @@ menuconfig INPUT_PINNACLE_LEGACY
     help
       Enable driver for Cirque Pinnacle trackpads
 
-if INPUT_PINNACLE
+if INPUT_PINNACLE_LEGACY
 
 config INPUT_PINNACLE_INIT_PRIORITY
     int "Cirque Pinnacle initialization priority"
